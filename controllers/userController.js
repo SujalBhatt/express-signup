@@ -23,7 +23,6 @@ const signUp = async (req, res) => {
         dateOfBirth
     })
 
-    await newUser.save()
     res.status(200).send(newUser)
     } catch (error) {
         console.log(error.message)
